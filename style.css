@@ -8,19 +8,19 @@ body{
               grid-template-columns: 400px auto;
 }
 header {
-       background-color:#0A4174;
+       background-color:#930500;
        grid-area: cabeca;
 }
 aside{
-       background-color:#49769F;
+       background-color:#95bbea;
        grid-area: braco;
 }
 main{
-       background-color: #4E8EA2;
+       background-color: #95bbea;
        grid-area: corpo;
 }
 footer{
-    background-color:#001D39;
+    background-color:#930500;
     grid-area: peh;
 }
 
@@ -69,8 +69,8 @@ footer{
    flex-direction: column;
    justify-content: space-between;
    padding: 50px;
-   border: black 2px solid;
-   background-color:#BDD8E9;
+   border: rgb(155, 0, 0) 2px solid;
+   background-color:#fff8e7;
    width: 200px;
    height: 350px;
    border-radius: 10px;
@@ -78,7 +78,7 @@ footer{
    margin: 10px;
 }
 button{
-    background-color: #0D3B66;
+    background-color: #b43e3e;
     border: none;
     padding: 10px;
     color: white;
