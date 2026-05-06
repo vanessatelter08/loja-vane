@@ -1,0 +1,106 @@
+body{
+       display: grid;
+       grid-template-areas:
+              "primeiro primeiro segundo"
+              "terceiro terceiro segundo"
+              "quarteta quarteta segundo";
+              grid-template-rows: 100px 750px 100px ;
+              grid-template-columns: 600px auto 300px;
+}
+header {
+       background-color:#6C0820;
+       grid-area: primeiro;
+}
+aside{
+       background-color:#be984f;
+       grid-area:segundo;
+}
+main{
+       background-color: #6d383a;
+       grid-area:terceiro;
+}
+footer{
+    background-color:#bb18ec;
+    grid-area: quarteta;
+}
+
+@media only screen and (max-width: 850px){
+    body{
+        display: grid;
+        grid-template-areas:
+        ""
+        "braco"
+        "corpo"
+        "peh";
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-columns: auto;
+    }
+    .letra{
+        color: coral;
+        
+    }
+}
+
+@media only screen and (max-width: 450px){
+     body{
+        display: grid;
+        grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+        grid-template-rows: 100px auto 100px;
+        grid-template-columns: auto;
+    }
+    aside{
+        display: none;
+    }
+}
+
+
+.card {
+   display: flex;
+   flex-direction: center; 
+   padding: 30px; 
+   border: rgb(245, 234, 234) 2px solid;
+   background-color: #cf9cf1d5;
+   width: 800px;
+   height: 500px; 
+   border-radius: 10px;
+   margin: 10px;
+}
+
+
+.topo-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 100px; 
+    text-align: left;    
+}
+
+.img_pedute {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.comprar{
+    background-color:rgb(209, 128, 128);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+
+.carrinho{
+    background-color:#F2AEBC ;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;  
+}
